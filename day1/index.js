@@ -6,14 +6,18 @@ let seqLen = seq.length;
 let halfSeq = seqLen / 2;
 
 for(let i = 0; i < seqLen; i++) {
-  let a = parseInt(seq[i], 10);
-  let b = (i ===  seqLen -1) ? parseInt(seq[0], 10): parseInt(seq[i + 1], 10);
+  seq[i] = parseInt(seq[i], 10);
+}
+
+for(let i = 0; i < seqLen; i++) {
+  let a = seq[i];
+  let b = (i ===  seqLen -1) ? seq[0]: seq[i + 1];
   total = (a === b) ? total + a : total;
 }
 
 for(let i = 0; i < seqLen; i++) {
-  let a = parseInt(seq[i], 10);
-  let b = (i < halfSeq) ? parseInt(seq[i + halfSeq], 10) : parseInt(seq[i - halfSeq], 10);
+  let a = seq[i];
+  let b = (i < halfSeq) ? seq[i + halfSeq] : seq[i - halfSeq];
   otherTotal = (a === b) ? otherTotal + a: otherTotal;
 }
 
