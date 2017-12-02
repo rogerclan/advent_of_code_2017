@@ -49,6 +49,7 @@ for(let i = 0; i < rows.length; i++) {
   let nums = rows[i].split('\t');
   let q = 0;
   for(let x = 0; x < nums.length; x++) {
+    if (q !== 0) break; // break out of outer loop
     let num1 = parseInt(nums[x], 10);
     for(let y = 0; y < nums.length; y++){
       let num2 = parseInt(nums[y], 10);
