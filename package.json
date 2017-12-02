@@ -1,0 +1,16 @@
+{
+  "name": "aoc",
+  "version": "1.0.0",
+  "description": "Advent of Code 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "advent",
+    "code",
+    "2017"
+  ],
+  "author": "R Zardon Roger <rroger@novetta.com>",
+  "license": "MIT"
+}
